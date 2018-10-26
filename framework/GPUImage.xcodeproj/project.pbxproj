@@ -19,6 +19,7 @@
 		4CC48C022134440900817C34 /* Solarize.metal in Sources */ = {isa = PBXBuildFile; fileRef = 4CC48BFF2134440900817C34 /* Solarize.metal */; };
 		4CC48C032134440900817C34 /* Solarize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC48C002134440900817C34 /* Solarize.swift */; };
 		4CC48C042134440900817C34 /* Solarize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC48C002134440900817C34 /* Solarize.swift */; };
+		590DE608218307AB00C63F29 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 590DE607218307AB00C63F29 /* CoreVideo.framework */; };
 		793D932320F66236008A7A6E /* Luminance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793D932220F66236008A7A6E /* Luminance.swift */; };
 		793D932520F66303008A7A6E /* Luminance.metal in Sources */ = {isa = PBXBuildFile; fileRef = 793D932420F66303008A7A6E /* Luminance.metal */; };
 		793D932620F66303008A7A6E /* Luminance.metal in Sources */ = {isa = PBXBuildFile; fileRef = 793D932420F66303008A7A6E /* Luminance.metal */; };
@@ -272,6 +273,7 @@
 		4CC48BF0213433D900817C34 /* StretchDistortion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StretchDistortion.swift; path = Source/Operations/StretchDistortion.swift; sourceTree = "<group>"; };
 		4CC48BFF2134440900817C34 /* Solarize.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; name = Solarize.metal; path = Source/Operations/Solarize.metal; sourceTree = "<group>"; };
 		4CC48C002134440900817C34 /* Solarize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Solarize.swift; path = Source/Operations/Solarize.swift; sourceTree = "<group>"; };
+		590DE607218307AB00C63F29 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		793D932220F66236008A7A6E /* Luminance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Luminance.swift; path = Source/Operations/Luminance.swift; sourceTree = "<group>"; };
 		793D932420F66303008A7A6E /* Luminance.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; name = Luminance.metal; path = Source/Operations/Luminance.metal; sourceTree = "<group>"; };
 		793D932820F66C5C008A7A6E /* ColorInversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ColorInversion.swift; path = Source/Operations/ColorInversion.swift; sourceTree = "<group>"; };
@@ -413,6 +415,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				590DE608218307AB00C63F29 /* CoreVideo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,6 +450,14 @@
 				4CC48BFF2134440900817C34 /* Solarize.metal */,
 			);
 			name = Effects;
+			sourceTree = "<group>";
+		};
+		590DE606218307AA00C63F29 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				590DE607218307AB00C63F29 /* CoreVideo.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		79E30E5C20ED6411005FA13C /* iOS */ = {
@@ -552,6 +563,7 @@
 				BCE0BE9620D6E38F0006E120 /* Outputs */,
 				BCE0BE9720D6E39E0006E120 /* Operations */,
 				BCE0BE7D20D6DE610006E120 /* Products */,
+				590DE606218307AA00C63F29 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
